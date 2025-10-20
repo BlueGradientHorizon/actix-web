@@ -392,7 +392,7 @@ impl HttpMessageBody {
             stream,
             limit: DEFAULT_CONFIG_LIMIT,
             length,
-            buf: BytesMut::with_capacity(8192),
+            buf: BytesMut::with_capacity(32768),
             err,
         }
     }
